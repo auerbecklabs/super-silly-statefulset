@@ -25,6 +25,8 @@ spec:
   volumeClaimTemplates:
   - metadata:
       name: www
+      annotations:
+        hello: "world"
     spec:
       accessModes: [ "ReadWriteOnce" ]
       resources:
